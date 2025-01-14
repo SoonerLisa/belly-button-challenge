@@ -1,0 +1,31 @@
+const url = "https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json";
+
+d3.json(url).then(function(data) {
+    console.log(data); // This will log the data to the console
+}).catch(function(error) {
+    console.error('Error fetching the data:', error);
+});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTU Bar Chart</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .bar {
+            fill: steelblue;
+        }
+        .bar:hover {
+            fill: orange;
+        }
+    </style>
+
+<body>
+    <h1>OTU Bar Chart</h1>
+    <select id="dropdown"></select>
+    <svg id="bar-chart" width="600" height="400"></svg>
+
+    <script src="demo.js"></script>
+</body>
+</html>

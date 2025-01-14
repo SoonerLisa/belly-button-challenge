@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+!DOCTYPE html
 <html lang="en">
+<
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,15 @@
 </head>
 <body>
     <div>
-        <select id="selDataset"></select>
-    </div>
+        <select id="selDataset"></select></div>
     <div id="bar"></div>
 
     <script>
         // Fetch the JSON data
-        d3.json("https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json").then((data) => {
+        d3.json("https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json").then((data) = {
             // Populate the dropdown menu
-            const sampleNames = data.names;
-            const dropdown = d3.select("#selDataset");
+            <const sampleNames>=data.names</const>
+            <const dropdown>=d3.select("selDataset")</const>;
             sampleNames.forEach(sample => {
                 dropdown.append("option").text(sample).property("value", sample);
             });
